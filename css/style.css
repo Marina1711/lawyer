@@ -1,0 +1,38 @@
+.glavnaya {
+    background: #030105;
+    width: 100%;
+    min-height: 500px;
+  margin: 0 auto;
+  position: absolute;
+}
+header {
+    width:100%;
+    height: 74px;
+    background: #683ea9;
+    margin-top: 50px;
+    box-shadow: 7px 0 0 7px rgba(104, 64, 167, 0.5);
+}
+.logo {
+    left: 40%;
+    border-radius: 50%;
+    width: 165px;
+    height: 165px;
+    background-color: #c59c6c;
+    position: absolute;
+    margin-top: -40px;
+    box-shadow: 0 0 0 10px rgba(197, 156, 108, 0.5);
+}
+.logo img {
+    margin-top: 35px;
+    margin-left: 25px;
+}
+#phone {
+    color: white;
+    border: 1px solid #8a6d4c;
+    width: 130px;
+    height: 48px;
+    line-height: 48px;
+}
+#phone::after {
+    border-left: 50px;
+}
