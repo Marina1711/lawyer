@@ -1,5 +1,5 @@
 .glavnaya {
-    background: #030105;
+    background-color: #030105;
     width: 100%;
     min-height: 500px;
   margin: 0 auto;
@@ -9,17 +9,18 @@ header {
     width:100%;
     height: 74px;
     background: #683ea9;
-    margin-top: 50px;
+    margin-top: 80px;
     box-shadow: 7px 0 0 7px rgba(104, 64, 167, 0.5);
+    position: absolute;
+    z-index: 10;
 }
 .logo {
-    left: 40%;
     border-radius: 50%;
     width: 165px;
     height: 165px;
     background-color: #c59c6c;
-    position: absolute;
     margin-top: -40px;
+    margin-right: 30px;
     box-shadow: 0 0 0 10px rgba(197, 156, 108, 0.5);
 }
 .logo img {
@@ -27,12 +28,109 @@ header {
     margin-left: 25px;
 }
 #phone {
+    display:flex;
+    margin-top: 11px;
+    margin-left: 60%;
+    position: absolute;
+}
+#mycall, #call {
     color: white;
     border: 1px solid #8a6d4c;
-    width: 130px;
     height: 48px;
-    line-height: 48px;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
 }
-#phone::after {
-    border-left: 50px;
+#mycall {
+    width: 180px;
+    line-height: 48px;
+    font-size: 21px;
+    font-weight: 400;
+}
+#call {
+font-size: 12px;
+width: 78px;
+background: #8a6d4c;
+padding-top: 11px;
+text-transform: uppercase;
+font-family: "Proxima Nova Lt";
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.menu li a {
+    text-decoration: none;
+    color: #c69c6d;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 81px;
+    text-transform: uppercase;
+    width: 128px;
+    height: 88px;
+    display: block;
+    margin-top: -7px;
+    text-align: center;
+}
+.menu li {
+    padding-right: 30px;
+}
+.menu li a:hover {
+    background:rgba(130, 90, 143, 0.5);
+}
+.photo {
+    margin-right: 150px;
+}
+.photoText {
+    display: flex;
+    justify-content: space-around;
+}
+.glav-text {
+    color: white;
+    margin: 249px 254px 0;
+}
+.glav-text h3 {
+    width: 450px;
+    color: #ffffff;
+    font-family: "Proxima Nova Bl";
+    font-size: 56px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.glav-text hr {
+    width: 1px;
+    height: 151px;
+    margin-top: 10px;
+    position: absolute;
+    border-color: #e3d2c3;
+}
+.glav-text p {
+    position: relative;
+    margin-left: 21px;
+    color: #ffffff;
+    font-family: "Proxima Nova Lt";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24.3px;
+    margin-top: 0;
+}
+.glav-text button {
+    width: 444px;
+    height: 69px;
+    background: #8964c3;
+    border: #8964c3;
+    font-family: "Proxima Nova Bl";
+    font-size: 17px;
+    text-transform: uppercase;
+    color: white;
+}
+.glav-text button:after {
+    width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
 }
