@@ -1,9 +1,10 @@
 .glavnaya {
-    background-color: #030105;
+    /* background-color: #030105; */
     width: 100%;
-    min-height: 500px;
+    min-height: 750px;
   margin: 0 auto;
   position: absolute;
+  background-image: url(../img/background.png);
 }
 header {
     width:100%;
@@ -82,6 +83,7 @@ font-family: "Proxima Nova Lt";
 }
 .photo {
     margin-right: 150px;
+    height: 760px;
 }
 .photoText {
     display: flex;
@@ -117,20 +119,25 @@ font-family: "Proxima Nova Lt";
     line-height: 24.3px;
     margin-top: 0;
 }
-.glav-text button {
-    width: 444px;
+.form {
+    width: 420px;
     height: 69px;
-    background: #8964c3;
+    background: linear-gradient(45deg, #8a65c4, #8964c3);
     border: #8964c3;
     font-family: "Proxima Nova Bl";
     font-size: 17px;
     text-transform: uppercase;
     color: white;
+    position: relative;
+    cursor: pointer;
+  outline: none;
 }
-.glav-text button:after {
-    width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-left: 100px solid red;
-    border-bottom: 50px solid transparent;
+.form:after {
+    content: '';
+    position: absolute;
+    left: 419px;
+    border: 35px solid transparent;
+    border-left: 35px solid;
+    bottom: 0;
+    border-left-color: #8963c3;
 }
