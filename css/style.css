@@ -1,10 +1,10 @@
 .glavnaya {
-    /* background-color: #030105; */
+
     width: 100%;
     min-height: 750px;
   margin: 0 auto;
   position: absolute;
-  background-image: url(img/background.png);
+  background-image: url(/img/background.png);
 }
 header {
     width:100%;
